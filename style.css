@@ -27,10 +27,8 @@ img {
   cursor: pointer;
   border: 1px solid black;
 }
-.campo {
+#campo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 p {
   text-align: center;

@@ -3,6 +3,7 @@
 //tesoura = 3
 
 let tabuleiro = document.getElementById("campo");
+let resultado = document.getElementById("resultado");
 
 let computador = "";
 let jogador = "";
@@ -23,24 +24,37 @@ function jogar(mao) {
   }
 
   if (jogador === computador) {
-    tabuleiro.innerHTML = `<div><img   src="./imgs/${jogador}.png" alt="" /><img   src="./imgs/${computador}.png" alt="" /></div><p>Empate!!</p>`;
+    tabuleiro.innerHTML = `<div> <p>você</p> <img src="./imgs/${jogador}.png" alt="" /></div> <div> <p>pc</p> <img src="./imgs/${computador}.png" alt="" /></div>`;
+    resultado.innerHTML = "<p>Empate!!</p>";
   }
+
   if (jogador === "pedra" && computador === "papel") {
-    tabuleiro.innerHTML = `<div><img   src="./imgs/${jogador}.png" alt="" /><img   src="./imgs/${computador}.png" alt="" /></div><p>Computador venceu!!</p>`;
+    tabuleiro.innerHTML = `<div> <p>você</p> <img src="./imgs/${jogador}.png" alt="" /></div> <div> <p>pc</p> <img src="./imgs/${computador}.png" alt="" /></div>`;
+    resultado.innerHTML = "<p>Computador venceu!!</p>";
   }
+
   if (jogador === "pedra" && computador === "tesoura") {
-    tabuleiro.innerHTML = `<div><img   src="./imgs/${jogador}.png" alt="" /><img   src="./imgs/${computador}.png" alt="" /></div><p>Você venceu!!</p>`;
+    tabuleiro.innerHTML = `<div> <p>você</p> <img src="./imgs/${jogador}.png" alt="" /></div> <div> <p>pc</p> <img src="./imgs/${computador}.png" alt="" /></div>`;
+    resultado.innerHTML = "<p>Você venceu!!</p>";
   }
+
   if (jogador === "papel" && computador === "pedra") {
-    tabuleiro.innerHTML = `<div><img   src="./imgs/${jogador}.png" alt="" /><img   src="./imgs/${computador}.png" alt="" /></div><p>Você venceu!!</p>`;
+    tabuleiro.innerHTML = `<div> <p>você</p> <img src="./imgs/${jogador}.png" alt="" /></div> <div> <p>pc</p> <img src="./imgs/${computador}.png" alt="" /></div>`;
+    resultado.innerHTML = "<p>Você venceu!!</p>";
   }
+
   if (jogador === "papel" && computador === "tesoura") {
-    tabuleiro.innerHTML = `<div><img   src="./imgs/${jogador}.png" alt="" /><img   src="./imgs/${computador}.png" alt="" /></div><p>Computador venceu!!</p>`;
+    tabuleiro.innerHTML = `<div> <p>você</p> <img src="./imgs/${jogador}.png" alt="" /></div> <div> <p>pc</p> <img src="./imgs/${computador}.png" alt="" /></div>`;
+    resultado.innerHTML = "<p>Computador venceu!!</p>";
   }
+
   if (jogador === "tesoura" && computador === "pedra") {
-    tabuleiro.innerHTML = `<div><img   src="./imgs/${jogador}.png" alt="" /><img   src="./imgs/${computador}.png" alt="" /></div><p>Computador venceu!!</p>`;
+    tabuleiro.innerHTML = `<div> <p>você</p> <img src="./imgs/${jogador}.png" alt="" /></div> <div> <p>pc</p> <img src="./imgs/${computador}.png" alt="" /></div>`;
+    resultado.innerHTML = "<p>Computador venceu!!</p>";
   }
+
   if (jogador === "tesoura" && computador === "papel") {
-    tabuleiro.innerHTML = `<div><img   src="./imgs/${jogador}.png" alt="" /><img   src="./imgs/${computador}.png" alt="" /></div><p>Você venceu!!</p>`;
+    tabuleiro.innerHTML = `<div> <p>você</p> <img src="./imgs/${jogador}.png" alt="" /></div> <div> <p>pc</p> <img src="./imgs/${computador}.png" alt="" /></div>`;
+    resultado.innerHTML = "<p>Você venceu!!</p>";
   }
 }
