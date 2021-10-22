@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pedra papel tesoura</title>
+  </head>
+  <body>
+    <h1>Pedra Papel Tesoura</h1>
+    <div class="cartas">
+      <img
+        onclick="jogar('pedra')"
+        class="img"
+        src="./imgs/pedra.png"
+        alt="pedra"
+      />
+
+      <img
+        onclick="jogar('papel')"
+        class="img"
+        src="./imgs/papel.png"
+        alt="papel"
+      />
+
+      <img
+        onclick="jogar('tesoura')"
+        class="img"
+        src="./imgs/tesoura.png"
+        alt="tesoura"
+      />
+    </div>
+    <div id="campo"></div>
+    <p id="resultado"></p>
+    <script src="./script.js"></script>
+  </body>
+</html>
